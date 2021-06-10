@@ -19,7 +19,7 @@ const routes = [
   },
   {
     name: Question,
-    path: RoutePath[Question],
+    path: `${RoutePath[Question]}/:index?`,
     component: () => import('@/views/Question'),
   },
   {
