@@ -15,11 +15,13 @@ export default {
     const {pushIntro} = useCompotableRoute();
 
     onMounted(() => {
-      setInterval(function () {
+      let timer;
+
+      timer = setInterval(function () {
         if (count.value < maxCount) {
            count.value += 1;
         } else {
-          clearTimeout(this);
+          clearInterval(timer);
           pushIntro();
         }
       }, 10);

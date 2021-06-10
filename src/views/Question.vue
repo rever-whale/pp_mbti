@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="() => goBack()">뒤로가기</button>
+    <button @click="goBack">뒤로가기</button>
     질문 페이지
     {{ question }}
     <button @click="() => onClick(true)">예</button>
